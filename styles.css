@@ -1,0 +1,51 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+} */
+
+body{
+    background-color: #d1cfcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    width: 80%;
+}
+
+.section-1{
+    background: url(asset/gojo.jpg);
+}
+
+.section-2{
+    background: url(asset/luffy.jpg);
+}
+
+.section-3{
+    background: url(asset/jinwoo.jpg);
+}
+
+.section-4{
+    background: url(asset/tanjiro.jpg);
+}
+
+[class^="section-"] {
+    flex: .19;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 8px;
+    transition: all .7s ease-out;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+[class^="section-"].active{
+    flex:3;
+}
