@@ -40,10 +40,11 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    margin: 8px;
+    margin: 5px;
     transition: all .7s ease-out;
     cursor: pointer;
     border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(37, 37, 37, .5) ;
 }
 
 [class^="section-"].active{
